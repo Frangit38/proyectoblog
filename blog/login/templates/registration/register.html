@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<br>
+<h1>  Registrar </h1>
+<br>
+<div class="form-group">
+<form method="POST">
+ {% csrf_token %}
+ {{ form.as_p }}
+ <button class="btn btn-info">Entrar</button>
+</div>
+
+
+
+
+
+{% endblock %}

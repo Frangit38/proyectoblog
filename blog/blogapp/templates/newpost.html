@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+{% block content %}
+
+{% if user.is_authenticated %}
+<br>
+<h1>  Agregar post al blog </h1>
+<br>
+<div class="form-group">
+<form method="POST">
+ {% csrf_token %}
+ {{ form.as_p }}
+ <button class="btn btn-info">Post</button>
+</div>
+{% else %}
+Inicie sesion para continuar
+{% endif %}
+
+
+
+
+
+{% endblock %}
