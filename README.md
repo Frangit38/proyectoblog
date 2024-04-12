@@ -1,2 +1,1 @@
-Francisco Piñeiro
-https://www.youtube.com/watch?v=o-s_1i_aUZA&ab_channel=Fran 
+Simple blog on python using django framework
